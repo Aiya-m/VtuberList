@@ -1,14 +1,42 @@
-@keyframes fadeIn {
-  from{
+.fade-up{
     opacity:0;
-    transform:translateY(20px);
-  }
-  to{
+    transform: translateY(40px);
+    transition: all .8s ease;
+}
+
+.fade-up.show{
     opacity:1;
-    transform:translateY(0);
+    transform: translateY(0);
+}
+
+/* Slide Up */
+@keyframes slideInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-.fade-in{
-  animation: fadeIn 0.8s ease forwards;
+.animate-slideInUp {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+/* Slide Down */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.8s ease-out forwards;
 }
