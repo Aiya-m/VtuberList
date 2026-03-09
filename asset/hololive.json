@@ -1,0 +1,144 @@
+{
+  "hololive": [
+    {
+      "name": "Gawr Gura",
+      "short_bio": "A shark-themed VTuber from the mythical city of Atlantis. Known for humorous streams, singing, and meme culture, she quickly became one of the most subscribed VTubers in the world.",
+      "social": {
+        "youtube": "https://www.youtube.com/@gawrgura",
+        "twitter": "https://twitter.com/gawrgura"
+      },
+      "birthday": "20 June",
+      "debut_date": "13 September 2020",
+      "fan_name": "Chumbuds",
+      "unit": "Hololive English - Myth",
+      "hobbies": ["Singing", "Rhythm games", "Memes"],
+      "special_skills": ["Strong karaoke performance", "Comedy timing", "Gaming"]
+    },
+    {
+      "name": "Houshou Marine",
+      "short_bio": "A pirate-themed VTuber who dreams of becoming a real pirate. Famous for energetic personality, talk streams, and singing.",
+      "social": {
+        "youtube": "https://www.youtube.com/@HoushouMarine",
+        "twitter": "https://twitter.com/houshoumarine"
+      },
+      "birthday": "30 July",
+      "debut_date": "11 August 2019",
+      "fan_name": "Houshou no Ichimi",
+      "unit": "Hololive JP - Gen 3",
+      "hobbies": ["Drawing", "Singing", "Talking streams"],
+      "special_skills": ["Illustration", "Entertainment talk skills"]
+    },
+    {
+      "name": "Hoshimachi Suisei",
+      "short_bio": "A virtual idol known for powerful singing and music releases. One of Hololive's most successful music artists.",
+      "social": {
+        "youtube": "https://www.youtube.com/@HoshimachiSuisei",
+        "twitter": "https://twitter.com/suisei_hosimati"
+      },
+      "birthday": "22 March",
+      "debut_date": "22 March 2018",
+      "fan_name": "Hoshiyomi",
+      "unit": "Hololive JP - 0th Gen",
+      "hobbies": ["Singing", "Tetris", "Music production"],
+      "special_skills": ["Professional-level singing", "Rhythm games"]
+    },
+    {
+      "name": "Usada Pekora",
+      "short_bio": "A mischievous rabbit VTuber known for chaotic humor and gaming streams.",
+      "social": {
+        "youtube": "https://www.youtube.com/@usadapekora",
+        "twitter": "https://twitter.com/usadapekora"
+      },
+      "birthday": "12 January",
+      "debut_date": "17 July 2019",
+      "fan_name": "Nousagi",
+      "unit": "Hololive JP - Gen 3",
+      "hobbies": ["Gaming", "Pranks"],
+      "special_skills": ["Minecraft building", "Comedic storytelling"]
+    },
+    {
+      "name": "Kobo Kanaeru",
+      "short_bio": "A rain shaman girl from Hololive Indonesia known for energetic personality and gaming streams.",
+      "social": {
+        "youtube": "https://www.youtube.com/@kobokanaeru",
+        "twitter": "https://twitter.com/kobokanaeru"
+      },
+      "birthday": "12 December",
+      "debut_date": "27 March 2022",
+      "fan_name": "Kobokerz",
+      "unit": "Hololive Indonesia - Gen 3",
+      "hobbies": ["Gaming", "Drawing"],
+      "special_skills": ["Comedy", "High-energy streaming"]
+    },
+    {
+      "name": "Shirakami Fubuki",
+      "short_bio": "A fox VTuber known for her friendly personality, gaming streams, and wide collaborations.",
+      "social": {
+        "youtube": "https://www.youtube.com/@ShirakamiFubuki",
+        "twitter": "https://twitter.com/shirakamifubuki"
+      },
+      "birthday": "5 October",
+      "debut_date": "1 June 2018",
+      "fan_name": "Sukonbu",
+      "unit": "Hololive JP - Gamers",
+      "hobbies": ["Gaming", "Memes"],
+      "special_skills": ["Voice acting", "Streaming endurance"]
+    },
+    {
+      "name": "Mori Calliope",
+      "short_bio": "A reaper apprentice who works as a rapper and singer. Known for music production and rap.",
+      "social": {
+        "youtube": "https://www.youtube.com/@MoriCalliope",
+        "twitter": "https://twitter.com/moricalliope"
+      },
+      "birthday": "4 April",
+      "debut_date": "13 September 2020",
+      "fan_name": "Deadbeats",
+      "unit": "Hololive English - Myth",
+      "hobbies": ["Music production", "Gaming"],
+      "special_skills": ["Rap", "Songwriting"]
+    },
+    {
+      "name": "Sakura Miko",
+      "short_bio": "A shrine maiden VTuber known for chaotic gameplay and energetic personality.",
+      "social": {
+        "youtube": "https://www.youtube.com/@SakuraMiko",
+        "twitter": "https://twitter.com/sakuramiko35"
+      },
+      "birthday": "5 March",
+      "debut_date": "1 August 2018",
+      "fan_name": "35P",
+      "unit": "Hololive JP - 0th Gen",
+      "hobbies": ["Gaming", "Watching anime"],
+      "special_skills": ["Comedy reactions", "Storytelling"]
+    },
+    {
+      "name": "Inugami Korone",
+      "short_bio": "A dog-themed VTuber famous for long gaming streams and cheerful personality.",
+      "social": {
+        "youtube": "https://www.youtube.com/@InugamiKorone",
+        "twitter": "https://twitter.com/inugamikorone"
+      },
+      "birthday": "1 October",
+      "debut_date": "13 April 2019",
+      "fan_name": "Koronesuki",
+      "unit": "Hololive JP - Gamers",
+      "hobbies": ["Retro games", "Chatting"],
+      "special_skills": ["Endurance gaming streams"]
+    },
+    {
+      "name": "Minato Aqua",
+      "short_bio": "A clumsy maid VTuber known for gaming skills and singing performances.",
+      "social": {
+        "youtube": "https://www.youtube.com/@MinatoAqua",
+        "twitter": "https://twitter.com/minatoaqua"
+      },
+      "birthday": "1 December",
+      "debut_date": "8 August 2018",
+      "fan_name": "Aqua Crew",
+      "unit": "Hololive JP - Gen 2",
+      "hobbies": ["Gaming", "Singing"],
+      "special_skills": ["FPS gaming", "Idol singing"]
+    }
+  ]
+}

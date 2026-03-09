@@ -1,0 +1,144 @@
+{
+  "nijisanji": [
+    {
+      "name": "Kuzuha",
+      "short_bio": "A vampire-themed VTuber known for competitive gaming streams and relaxed personality. He became the first Nijisanji member and first male VTuber in Japan to surpass 2 million subscribers.",
+      "social": {
+        "youtube": "https://www.youtube.com/@Kuzuha",
+        "twitter": "https://twitter.com/Vamp_Kuzu"
+      },
+      "birthday": "November 10",
+      "debut_date": "2018",
+      "fan_name": "Kuzuha Fans",
+      "unit": "ChroNoiR",
+      "hobbies": ["Gaming", "Singing", "Chatting"],
+      "special_skills": ["FPS games", "Entertaining commentary"]
+    },
+    {
+      "name": "Kanae",
+      "short_bio": "A popular Nijisanji male VTuber known for relaxed talk streams and FPS gameplay. Frequently collaborates with Kuzuha as the duo ChroNoiR.",
+      "social": {
+        "youtube": "https://www.youtube.com/@Kanae",
+        "twitter": "https://twitter.com/Kanae_2434"
+      },
+      "birthday": "July 7",
+      "debut_date": "May 2018",
+      "fan_name": "Kanae-tai",
+      "unit": "ChroNoiR",
+      "hobbies": ["Gaming", "Watching anime"],
+      "special_skills": ["FPS games", "Team collaborations"]
+    },
+    {
+      "name": "Hyakumantenbara Salome",
+      "short_bio": "An 'ojou-sama' (rich lady) style VTuber who became famous for reaching 1 million subscribers in just two weeks after debut.",
+      "social": {
+        "youtube": "https://www.youtube.com/@HyakumantenbaraSalome",
+        "twitter": "https://twitter.com/1000000lome"
+      },
+      "birthday": "May 24",
+      "debut_date": "May 2022",
+      "fan_name": "Salomates",
+      "unit": "Nijisanji JP",
+      "hobbies": ["Gaming", "Chat streams"],
+      "special_skills": ["Comedy reactions", "Entertaining storytelling"]
+    },
+    {
+      "name": "Tsukino Mito",
+      "short_bio": "One of the earliest Nijisanji VTubers, known as the 'Class President'. Famous for creative content and unusual stream topics.",
+      "social": {
+        "youtube": "https://www.youtube.com/@TsukinoMito",
+        "twitter": "https://twitter.com/MitoTsukino"
+      },
+      "birthday": "September 24",
+      "debut_date": "2018",
+      "fan_name": "Mito-moto",
+      "unit": "Nijisanji JP 1st Gen",
+      "hobbies": ["Talking streams", "Internet culture"],
+      "special_skills": ["Creative content ideas"]
+    },
+    {
+      "name": "Hoshikawa Sara",
+      "short_bio": "A bright and energetic VTuber known for gaming streams and collaborations with other Nijisanji members.",
+      "social": {
+        "youtube": "https://www.youtube.com/@HoshikawaSara",
+        "twitter": "https://twitter.com/Sara_Hoshikawa"
+      },
+      "birthday": "August 7",
+      "debut_date": "October 2019",
+      "fan_name": "Hoshikuzu",
+      "unit": "Nijisanji JP",
+      "hobbies": ["Gaming", "Chatting"],
+      "special_skills": ["Comedy reactions"]
+    },
+    {
+      "name": "Sasaki Saku",
+      "short_bio": "A gamer VTuber known for competitive gameplay and humorous personality.",
+      "social": {
+        "youtube": "https://www.youtube.com/@SasakiSaku",
+        "twitter": "https://twitter.com/saku_sasaki"
+      },
+      "birthday": "November 11",
+      "debut_date": "2018",
+      "fan_name": "Saku Fans",
+      "unit": "Nijisanji JP",
+      "hobbies": ["Gaming", "Anime"],
+      "special_skills": ["Competitive gameplay"]
+    },
+    {
+      "name": "Ange Katrina",
+      "short_bio": "A mage-themed VTuber known for energetic streams and collaborations.",
+      "social": {
+        "youtube": "https://www.youtube.com/@AngeKatrina",
+        "twitter": "https://twitter.com/ange_katrina_"
+      },
+      "birthday": "February 7",
+      "debut_date": "2019",
+      "fan_name": "Katrina Knights",
+      "unit": "Sanbaka",
+      "hobbies": ["Gaming", "Chat streams"],
+      "special_skills": ["Voice acting"]
+    },
+    {
+      "name": "Inui Toko",
+      "short_bio": "A VTuber with strong singing ability and calm personality, known for music and karaoke streams.",
+      "social": {
+        "youtube": "https://www.youtube.com/@InuiToko",
+        "twitter": "https://twitter.com/inui_toko"
+      },
+      "birthday": "September 9",
+      "debut_date": "2019",
+      "fan_name": "Inui Fans",
+      "unit": "Sanbaka",
+      "hobbies": ["Singing", "Gaming"],
+      "special_skills": ["Powerful singing voice"]
+    },
+    {
+      "name": "Fuwa Minato",
+      "short_bio": "A charismatic host-style VTuber known for singing streams and energetic personality.",
+      "social": {
+        "youtube": "https://www.youtube.com/@FuwaMinato",
+        "twitter": "https://twitter.com/Fuwa_Minato"
+      },
+      "birthday": "October 23",
+      "debut_date": "2019",
+      "fan_name": "FuwaMin",
+      "unit": "ROF-MAO",
+      "hobbies": ["Singing", "Gaming"],
+      "special_skills": ["Live singing", "Entertainment hosting"]
+    },
+    {
+      "name": "Vox Akuma",
+      "short_bio": "A demon VTuber from Nijisanji EN known for deep voice acting, roleplay streams, and strong international fanbase.",
+      "social": {
+        "youtube": "https://www.youtube.com/@VoxAkuma",
+        "twitter": "https://twitter.com/Vox_Akuma"
+      },
+      "birthday": "April 25",
+      "debut_date": "December 2021",
+      "fan_name": "Kindred",
+      "unit": "Luxiem",
+      "hobbies": ["Roleplay", "Gaming"],
+      "special_skills": ["Voice acting", "ASMR"]
+    }
+  ]
+}
