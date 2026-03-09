@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <title>Vtuber List</title>
+</head>
+
+<body class="h-screen overflow-hidden">
+
+    <div id="bg1" class="bg-layer"></div>
+    <div id="bg2" class="bg-layer"></div>
+
+    <div id="gridContainer" class="relative backdrop-blur-md h-screen">
+        <div class="max-w-5xl mx-auto py-6 px-4">
+
+            <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">
+                VTuber List
+            </h1>
+
+            <!-- ปุ่มเลือกค่าย -->
+            <div
+                class="flex justify-center gap-6 mb-8 bg-white/40 backdrop-blur-md border border-white/30 shadow-lg px-8 py-3 rounded-2xl w-fit mx-auto">
+
+                <button id="holoBtn" class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                    Hololive
+                </button>
+
+                <button id="nijiBtn"
+                    class="px-6 py-2 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 transition">
+                    Nijisanji
+                </button>
+
+            </div>
+
+            <!-- container ที่จะเปลี่ยนสี -->
+            <div id="subContainer" class="p-6 rounded-xl transition-colors duration-500 bg-yellow-100">
+
+                <div id="vtuberGrid" class="grid grid-cols-5 gap-6"></div>
+
+            </div>
+
+        </div>
+        <!-- content เดิมของคุณ -->
+
+    </div>
+
+
+
+    <script>
+
+        const grid = document.getElementById("vtuberGrid")
+        const container = document.getElementById("gridContainer")
+        const subcontainer = document.getElementById("subContainer")
+
+        function renderVTuber(jsonPath, key) {
+
+            grid.innerHTML = ""
+
+            fetch(jsonPath)
+                .then(res => res.json())
+                .then(data => {
+
+                    data[key].forEach(vtuber => {
+
+                        const card = `
+<div onclick="openDetail('${vtuber.name}')"
+class="group bg-white rounded-xl shadow-md overflow-hidden text-center cursor-pointer
+transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+
+<div class="overflow-hidden">
+<img src="${vtuber.image}" 
+class="w-full h-36 object-cover transition duration-500 group-hover:scale-110">
+</div>
+
+<div class="py-3 font-semibold text-gray-700 transition duration-300 group-hover:text-blue-500">
+${vtuber.name}
+</div>
+
+</div>
+`
+
+                        grid.innerHTML += card
+
+                    })
+
+                })
+
+        }
+
+        /* โหลด Hololive ตอนเปิดหน้า */
+        renderVTuber("../asset/hololive.json", "hololive")
+
+        /* ปุ่ม Hololive */
+        document.getElementById("holoBtn").onclick = () => {
+            subcontainer.classList.add("bg-yellow-100")
+            subcontainer.classList.remove("bg-blue-100")
+
+            renderVTuber("../asset/hololive.json", "hololive")
+
+        }
+
+        /* ปุ่ม Nijisanji */
+        document.getElementById("nijiBtn").onclick = () => {
+            subcontainer.classList.add("bg-blue-100")
+            subcontainer.classList.remove("bg-yellow-100")
+
+            renderVTuber("../asset/nijisanji.json", "nijisanji")
+
+        }
+
+        const backgrounds = [
+            "../asset/Background/263342.webp",
+            "../asset/Background/Hololive_cast.webp",
+            "../asset/Background/Hololive_Talents2.webp",
+            "../asset/Background/hololive-super-expo-2022-will-include-hololive-en-myth-members-min.webp",
+            "../asset/Background/Screenshot+2022-05-01+at+1.23.23+PM.webp"
+        ]
+
+        let index = 0
+        let active = 1
+
+        const bg1 = document.getElementById("bg1")
+        const bg2 = document.getElementById("bg2")
+
+        bg1.style.backgroundImage = `url(${backgrounds[0]})`
+
+        function changeBackground() {
+
+            index++
+            if (index >= backgrounds.length) {
+                index = 0
+            }
+
+            const nextBg = active === 1 ? bg2 : bg1
+            const currentBg = active === 1 ? bg1 : bg2
+
+            nextBg.style.backgroundImage = `url(${backgrounds[index]})`
+
+            nextBg.style.opacity = 1
+            currentBg.style.opacity = 0
+
+            active = active === 1 ? 2 : 1
+
+        }
+
+        setInterval(changeBackground, 8000)
+
+        function openDetail(name) {
+            const encoded = encodeURIComponent(name)
+            window.location.href = `Detail.html?name=${encoded}`
+        }
+    </script>
+
+</body>
+
+</html>
