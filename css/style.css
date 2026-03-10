@@ -42,7 +42,7 @@
   z-index: -2;
 }
 
-#bg2{
+#bg2 {
   opacity: 0;
 .animate-slideInUp {
   animation: slideInUp 0.8s ease-out forwards;
