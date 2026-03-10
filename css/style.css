@@ -9,7 +9,6 @@
     transform: translateY(0);
 }
 
-/* Slide Up */
 @keyframes slideInUp {
   from {
     transform: translateY(40px);
@@ -26,7 +25,7 @@
 }
 
 .bg-layer{
-  position: fixed;      /* ทำให้ยึดกับหน้าจอ */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,7 +39,7 @@
 
   transition: opacity 2s ease;
 
-  z-index: -2;          /* อยู่หลัง content */
+  z-index: -2;
 }
 
 #bg2{
@@ -49,7 +48,6 @@
   animation: slideInUp 0.8s ease-out forwards;
 }
 
-/* Slide Down */
 @keyframes slideInDown {
   from {
     transform: translateY(-40px);
