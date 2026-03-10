@@ -10,35 +10,25 @@
 </head>
 
 <body class="bg-blue-300 min-h-screen">
-    <!-- Navbar -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-500 to-yellow-400 shadow-md">
         <div class="flex justify-center mx-auto p-4 text-white text-xl font-bold">
-            VTuber Ranking 2025
+            Most Popular Vtuber In 2025
         </div>
     </nav>
-
-
     <div class="mx-auto mt-10 p-6 pt-20 flex gap-6 items-start">
-
-        <button onclick="history.back()" class="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-700 h-fit left-9">
-            ← Back
-        </button>
-
+        <button onclick="history.back()" class="px-4 py-2 bg-blue-500 rounded-lg hover:bg-blue-700 h-fit left-9">←
+            Back</button>
         <div id="detailCard" class="bg-white rounded-xl shadow-lg p-6 flex-1"></div>
-
     </div>
 
     <script>
         const params = new URLSearchParams(window.location.search)
         const name = params.get("name")
-
         const container = document.getElementById("detailCard")
-
         async function loadData() {
 
             const holo = await fetch("../asset/hololive.json").then(r => r.json())
             const niji = await fetch("../asset/nijisanji.json").then(r => r.json())
-
             const all = [...holo.hololive, ...niji.nijisanji]
 
             const vtuber = all.find(v => v.name === name)
@@ -49,115 +39,67 @@
             }
 
             container.innerHTML = `
-<div class="flex gap-8 items-start">
-
-<!-- รูป -->
-<div class="w-1/3">
-
-<img src="${vtuber.full_img}" 
-class="w-full max-h-96 object-contain rounded-xl shadow-md">
-
-</div>
-
-<!-- ข้อมูล -->
-<div class="w-2/3">
-
-<h1 class="text-3xl font-bold mb-2">${vtuber.name}</h1>
-
-<p class="text-gray-600 mb-4">${vtuber.short_bio}</p>
-
-<div class="grid grid-cols-2 gap-4 text-sm mt-4">
-
-<p><b>Birthday:</b> ${vtuber.birthday}</p>
-<p><b>Debut:</b> ${vtuber.debut_date}</p>
-<p><b>Fan Name:</b> ${vtuber.fan_name}</p>
-<p><b>Unit:</b> ${vtuber.unit}</p>
-
-</div>
-
-<div class="mt-6">
-<p class="font-semibold">Hobbies</p>
-<p>${vtuber.hobbies.join(", ")}</p>
-</div>
-
-<div class="mt-4">
-<p class="font-semibold">Special Skills</p>
-<p>${vtuber.special_skills.join(", ")}</p>
-</div>
-
-<div class="flex gap-4 mt-6">
-
-<a href="${vtuber.social.youtube}" target="_blank"
-class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
-YouTube
-</a>
-
-<a href="${vtuber.social.twitter}" target="_blank"
-class="px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition">
-Twitter
-</a>
-
-</div>
-<div class="mt-8 border-t pt-4">
-
-<button onclick="toggleExtra()"
-class="flex items-center gap-2 text-gray-700 hover:text-black transition">
-
-<span class="font-semibold">Most Popular Work in 2025</span>
-
-<span id="arrow" class="transition-transform duration-300">
-▼
-</span>
-
-</button>
-
-<div id="extraContent"
-class="max-h-0 overflow-hidden transition-all duration-500">
-
-<div class="mt-4 rounded-lg overflow-hidden shadow">
-
-<iframe
-id="youtubePlayer"
-class="w-full h-[400px]"
-src=""
-title="YouTube video player"
-frameborder="0"
-allowfullscreen>
-</iframe>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-`
+                <div class="flex gap-8 items-start">
+                    <div class="w-1/3">
+                        <img src="${vtuber.full_img}" class="w-full max-h-96 object-contain rounded-xl shadow-md">
+                    </div>
+                    <div class="w-2/3">
+                        <h1 class="text-3xl font-bold mb-2">${vtuber.name}</h1>
+                        <p class="text-gray-600 mb-4">${vtuber.short_bio}</p>
+                        <div class="grid grid-cols-2 gap-4 text-sm mt-4">
+                            <p><b>Birthday:</b> ${vtuber.birthday}</p>
+                            <p><b>Debut:</b> ${vtuber.debut_date}</p>
+                            <p><b>Fan Name:</b> ${vtuber.fan_name}</p>
+                            <p><b>Unit:</b> ${vtuber.unit}</p>
+                        </div>
+                        <div class="mt-6">
+                            <p class="font-semibold">Hobbies</p>
+                            <p>${vtuber.hobbies.join(", ")}</p>
+                        </div>
+                        <div class="mt-4">
+                            <p class="font-semibold">Special Skills</p>
+                            <p>${vtuber.special_skills.join(", ")}</p>
+                        </div>
+                        <div class="flex gap-4 mt-6">
+                            <a href="${vtuber.social.youtube}" target="_blank"
+                                class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
+                                YouTube
+                            </a>
+                            <a href="${vtuber.social.twitter}" target="_blank"
+                                class="px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition">
+                                Twitter
+                            </a>
+                        </div>
+                        <div class="mt-8 border-t pt-4">
+                            <button onclick="toggleExtra()" class="flex items-center gap-2 text-gray-700 hover:text-black transition">
+                                <span class="font-semibold">Most Popular Work in 2025</span>
+                                <span id="arrow" class="transition-transform duration-300">▼</span>
+                            </button>
+                            <div id="extraContent" class="max-h-0 overflow-hidden transition-all duration-500">
+                                <div class="mt-4 rounded-lg overflow-hidden shadow">
+                                    <iframe id="youtubePlayer" class="w-full h-[400px]" src="" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `
             const player = document.getElementById("youtubePlayer")
 
-    if (player) {
-        player.src = vtuber.popular_vid
-    }
+            if (player) {
+                player.src = vtuber.popular_vid
+            }
         }
         function toggleExtra() {
-
             const content = document.getElementById("extraContent")
             const arrow = document.getElementById("arrow")
-
             if (content.style.maxHeight) {
-
                 content.style.maxHeight = null
                 arrow.style.transform = "rotate(0deg)"
-
             } else {
-
                 content.style.maxHeight = content.scrollHeight + "px"
                 arrow.style.transform = "rotate(180deg)"
-
             }
-
         }
         loadData()
     </script>
